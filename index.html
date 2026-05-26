@@ -3,43 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swastik's GeoWeather Pro</title>
+    
+    <title>GeoWeather Pro — Global Atmospheric Intelligence</title>
+    
+    <meta name="description" content="Access GeoWeather Pro for real-time global weather diagnostics, high-resolution predictive charting arrays, and integrated Gemini AI weather consultation pipelines.">
+    
+    <link rel="icon" href="https://fonts.gstatic.com/s/e/notoemoji/latest/1f324_fe0f/512.png" type="image/png">
+
     <style>
-        /* Forces the outer website background to be pitch black */
-        body, html {
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght=300;400;600;700&display=swap');
+
+        body {
             margin: 0;
             padding: 0;
-            height: 100%;
-            background-color: #000000;
-            font-family: 'Segoe UI', Arial, sans-serif;
-            overflow: hidden;
-            color: #ffffff;
-        }
-
-        /* Clean top navigation header */
-        .app-header {
-            padding: 15px 20px;
-            background: #0a0a0a;
-            border-bottom: 1px solid #1c1c1c;
+            background-color: #0E1117;
+            color: #E0E0E0;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
             text-align: center;
+            overflow-x: hidden;
         }
 
-        /* Responsive iframe container embedding your geoapp-py name */
-        iframe {
-            width: 100%;
-            height: calc(100% - 70px);
-            border: none;
-            background: #000000;
+        .container {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 24px;
+            padding: 50px;
+            max-width: 600px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(8px);
+            margin: 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 0 0 10px 0;
+            font-weight: 700;
+        }
+
+       .gradient-text {
+           background: linear-gradient(45deg, #FFD700, #FFA500);
+          -webkit-background-clip: text; /* For Safari and Chrome engines */
+           background-clip: text;         /* Standard property to clear VS Code warning */
+          -webkit-text-fill-color: transparent;
+}
+
+        p {
+            color: #888888;
+            font-size: 1.1rem;
+            margin-bottom: 35px;
+            line-height: 1.6;
+        }
+
+        .launch-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+            color: #000000;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            padding: 16px 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .launch-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 0.8rem;
+            color: #444444;
+            letter-spacing: 1px;
         }
     </style>
 </head>
 <body>
 
-    <div class="app-header">
-        <h2 style="margin:0; font-weight: 400; letter-spacing: 1.5px; color: #ff4b4b;">⚡ GEOWEATHER PORTAL</h2>
+    <div class="container">
+        <h1>🚀 <span class="gradient-text">GeoWeather Pro</span></h1>
+        <p>Welcome to the premium atmospheric tracking dashboard. Experience real-time global weather diagnostics, predictive charting arrays, and integrated Gemini AI consultation pipelines.</p>
+        
+        <a href="https://swastikpandey1818-stack.github.io/geo-weather-pro-py.github.io/" target="_blank" class="launch-btn">
+            Launch Live Dashboard ⚡
+        </a>
+        
+        <div class="footer">SWASTIK METEOROLOGICAL NETWORK © 2026</div>
     </div>
-
-    <iframe src="https://geoapp-py.streamlit.app/?embed=true"></iframe>
 
 </body>
 </html>
