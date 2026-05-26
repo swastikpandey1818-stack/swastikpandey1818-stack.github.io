@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swastik's GeoWeather Pro</title>
+    <style>
+        /* Forces the outer website background to be pitch black */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: #000000;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            overflow: hidden;
+            color: #ffffff;
+        }
+
+        /* Clean top navigation header */
+        .app-header {
+            padding: 15px 20px;
+            background: #0a0a0a;
+            border-bottom: 1px solid #1c1c1c;
+            text-align: center;
+        }
+
+        /* Responsive iframe container embedding your geoapp-py name */
+        iframe {
+            width: 100%;
+            height: calc(100% - 70px);
+            border: none;
+            background: #000000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="app-header">
+        <h2 style="margin:0; font-weight: 400; letter-spacing: 1.5px; color: #ff4b4b;">⚡ GEOWEATHER PORTAL</h2>
+    </div>
+
+    <iframe src="https://geoapp-py.streamlit.app/?embed=true"></iframe>
+
+</body>
+</html>
